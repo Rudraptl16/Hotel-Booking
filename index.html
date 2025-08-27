@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxuria Hotel </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/img/Hotel Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap&family=Cinzel+Decorative:wght@400;700;900&family=Monda:wght@400..700&Bricolage+Grotesque:opsz,wght@12..96,200..800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Luxuria</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Background with multiple images -->
+        <div class="hero-background">
+            <div class="bg-slide active" style="background-image: url('img/Taj Main.jpeg')"></div>
+            <div class="bg-slide" style="background-image: url('img/Deluxe Suite.webp')"></div>
+            <div class="bg-slide" style="background-image: url('img/Presidential Suite.jpeg')"></div>
+        </div>
+        
+        <!-- Gradient overlay -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Main content -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Experience</span>
+                        <span class="title-line">Modern Luxury</span>
+                    </h1>
+                    <p class="hero-subtitle">Where contemporary design meets unparalleled comfort. Experience world-class hospitality and create unforgettable memories at our luxury hotel.</p>
+                    
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>5-Star Rating</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wifi"></i>
+                            <span>Free WiFi</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-swimming-pool"></i>
+                            <span>Infinity Pool</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#rooms" class="btn btn-primary">
+                            <span>Explore Rooms</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Book Now</span>
+                            <i class="fas fa-calendar-check"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick booking widget -->
+                <div class="quick-booking">
+                    <div class="booking-card">
+                        <h3>Quick Booking</h3>
+                        <form class="booking-form">
+                            <div class="form-group">
+                                <label><i class="fas fa-calendar-alt"></i> Check-in</label>
+                                <input type="date" placeholder="Select check-in date" title="Check-in date">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-calendar-alt"></i> Check-out</label>
+                                <input type="date" placeholder="Select check-out date" title="Check-out date">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-user"></i> Guests</label>
+                                <select title="Number of guests">
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4+ Guests</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-booking">
+                                <i class="fas fa-search"></i>
+                                Check Availability
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="hero-scroll">
+            <span>Scroll to Discover</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        
+        <!-- Background navigation -->
+        <div class="bg-navigation">
+            <button class="bg-nav prev" aria-label="Previous background">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="bg-nav next" aria-label="Next background">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Welcome to Luxuria</h2>
+                    <p class="about-description">
+                        Nestled in the heart of the city, Luxuria Hotel offers a perfect blend of modern elegance and timeless comfort. 
+                        Our commitment to exceptional service and attention to detail ensures every stay is memorable.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Luxury Rooms</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Concierge Service</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5★</h3>
+                            <p>Guest Rating</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="/Hotel Luxuria/img/welcome.jpg" alt="Hotel image" height="400" width="550">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2 class="section-title">Our Luxury Rooms</h2>
+            <p class="section-subtitle">Experience comfort redefined in our carefully designed accommodations</p>
+            
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="/Hotel Luxuria/img/Deluxe Suite.webp" alt="Deluxe Suite" height="250" width="522">
+                    </div>
+                    <div class="room-content">
+                        <h3>Deluxe Suite</h3>
+                        <p>Spacious living with panoramic city views and premium amenities</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                            <span><i class="fas fa-tv"></i> Smart TV</span>
+                            <span><i class="fas fa-bath"></i> Luxury Bath</span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">$299/night</span>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="/Hotel Luxuria/img/room-3.jpeg" alt="Executive Room" height="250" width="522">
+                    </div>
+                    <div class="room-content">
+                        <h3>Executive Room</h3>
+                        <p>Elegant design with workspace and premium comfort features</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-coffee"></i> Coffee Maker</span>
+                            <span><i class="fas fa-desktop"></i> Work Desk</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">$199/night</span>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="/Hotel Luxuria/img/Presidential Suite.jpeg" alt="Presidential Suite" height="250" width="522">
+                    </div>
+                    <div class="room-content">
+                        <h3>Presidential Suite</h3>
+                        <p>Ultimate luxury with private terrace and exclusive services</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-swimming-pool"></i> Pool Access</span>
+                            <span><i class="fas fa-concierge-bell"></i> Butler Service</span>
+                            <span><i class="fas fa-car"></i> Valet Parking</span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">$599/night</span>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <h2 class="section-title">Premium Amenities</h2>
+            <p class="section-subtitle">Everything you need for a perfect stay</p>
+            
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <i class="fas fa-swimming-pool"></i>
+                    <h3>Infinity Pool</h3>
+                    <p>Stunning rooftop pool with panoramic city views</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Fine Dining</h3>
+                    <p>World-class restaurant with international cuisine</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-spa"></i>
+                    <h3>Spa & Wellness</h3>
+                    <p>Relaxing spa treatments and fitness center</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-wifi"></i>
+                    <h3>High-Speed WiFi</h3>
+                    <p>Complimentary high-speed internet access</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>24/7 Concierge</h3>
+                    <p>Round-the-clock personalized service</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-car"></i>
+                    <h3>Valet Parking</h3>
+                    <p>Complimentary valet parking service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Photo Gallery</h2>
+            <p class="section-subtitle">Discover the beauty of Luxuria Hotel</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/Deluxe Suite.webp" alt="Deluxe Suite">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Executive Room.jpeg" alt="Executive Room">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Presidential Suite.jpeg" alt="Presidential Suite">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/room-3.jpeg" alt="Room 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/room-4.jpeg" alt="Room 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/room-5.jpeg" alt="Room 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Taj Main.jpeg" alt="Taj Main">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/welcome.jpg" alt="Welcome">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to experience luxury? Contact us for reservations or inquiries.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Luxury Avenue, City Center</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@luxuriahotel.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Book Your Stay</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" placeholder="Check-in Date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" placeholder="Check-out Date" required>
+                        </div>
+                        <div class="form-group">
+<label for="room-type">Select Room Type</label>
+<select id="room-type" required>
+                                <option value="">Select Room Type</option>
+                                <option value="deluxe">Deluxe Suite</option>
+                                <option value="executive">Executive Room</option>
+                                <option value="presidential">Presidential Suite</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luxuria Hotel</h3>
+                    <p>Experience the pinnacle of modern luxury and comfort in the heart of the city.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Luxury Avenue<br>City Center, 10001</p>
+                    <p>+1 (555) 123-4567<br>info@luxuriahotel.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luxuria Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
